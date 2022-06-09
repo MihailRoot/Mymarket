@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+}
+
+.main{
+padding: 400px;
+}
+.anim1{
+padding: 50px;
+}
+.animtext1{
+    padding-left: 600px;
+    margin-top: 200px ;
+    font-size: 20px;
+    font-family: Roboto;
+    width: 1000px;
+
+}
+.anim2{
+    padding-top: 300px;
+}
+.animtext2{
+    font-family: Roboto;
+    width: 570px;
+    font-size: 20px;
+
+}
+label{
+    border-color: blue;
+}

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "ws": "^8.5.0",
+    "xterm-addon-attach": "^0.6.0"
+  }
+}

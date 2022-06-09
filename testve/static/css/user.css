@@ -1,0 +1,58 @@
+#myfirst{
+    background-color: #63039e;
+    width:200px;
+    height:100px;
+    padding: 7px;
+position: relative;
+left:400px;
+}
+#myfirst:hover{
+    -webkit-animation: notransform   10s infinite;
+    animation: notransform  10s infinite;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#dotnet{
+    background-color: #0d739bdc;
+    width:200px;
+    height:100px;
+    padding: 7px;
+position: relative;
+left:400px;
+}
+#dotnet:hover{
+    -webkit-animation: notransform   10s infinite;
+    animation: notransform  10s infinite;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#textmyfirst{
+    color:black;
+
+}
+#textmyfirst:hover{
+    visibility: visible;
+    margin-top: -20px;
+
+}
+#picture{
+height: 130px;
+    width: 130px;
+    background-color: rgb(69, 60, 73);
+position: relative;
+left:1200px;
+top:-30px
+}
+
+#profilepicture{
+    width: 55%;
+    height: auto;
+    position: relative;
+    top:-65px;
+    left: 56px;
+    z-index: 9999;
+}
+#profilepicture:hover{
+transform:scale(2.1);
+transition: 0.5s;
+}

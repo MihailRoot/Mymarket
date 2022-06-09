@@ -1,0 +1,9 @@
+<div id='result'>   
+    <ul>U have {{bill.pay_url}}</ul>
+    <form action='/qiwi/' method='post'>
+        {% csrf_token %}
+    <label for='oplata'>Your balance: </label>
+    <input id='oplata' text='text' name='oplata' maxlenght='1000000'></input>
+         <input type='submit' value='OK'>
+</form>
+</div>

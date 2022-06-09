@@ -1,0 +1,49 @@
+{% load static %}
+
+{% include  'base.html' %}
+<link rel="stylesheet" type="text/css" href= {% static "user.css" %}>
+
+<!--<script type='module' src={% static 'terminal.js'%}></script> -->
+<div id="terminal"></div>
+
+      <div class="grid grid-cols-3 gap-3 relative"  style="top:-100px;padding: 100px; right:500px">
+        <button>
+        <div id='dotnet' class='rounded-br-lg' style='margin:5px'>
+          <img style='width:60px;height:60px; margin-left:9px;  border-radius:100%;' border="5" src={% static 'js.jpg' %}>
+          <!--<a style='' id='textmyfirst'>Читать больше о пайтон</a>-->
+        
+        <a style='position:relative;top:-68px; left:30px;' class='text-violet-700'>Docker</a>
+        <p style='position:relative;top:-70px; left:75px; color:white; width:120px'>Установка контейнера</p>
+        </button>
+      </div>
+      <p id='xuy'>{{image}}</p>
+      <p id='xer'>{{uuid}}</p>
+      <p id="pip">{{file}}</p>
+      <script>
+        var term = new Terminal();
+        term.open(document.getElementById('terminal'));
+        term.write('Fuck \x1B[1;3;31mxterm.js\x1B[0m $ ')
+        let  socket = new WebSocket('ws://20.79.176.157:3000/'); 
+        const attachAddon = new AttachAddon.AttachAddon(socket);
+        term.loadAddon(attachAddon);
+        socket.onmessage = function(msg) {
+          console.log(msg); }
+        socket.onopen = function() {
+          console.log("connected");
+            let sa = document.getElementById("xer").innerText
+            let fa = document.getElementById("pip").innerText
+            data ={
+              "first":sa,
+              "second":fa,
+            }
+            //let sasa = document.getElementById('xuy').innerText
+            //let req = {
+             // type: 'command',
+             // data: 'apt-get update'
+            //} 
+            //socket.send(JSON.stringify(req))
+           // socket.send(sasa)
+            socket.send(JSON.stringify(data))    
+        }
+      </script>
+      </div>

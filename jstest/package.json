@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "node-docker-api": "^1.1.22",
+    "sweetalert2": "^11.4.8",
+    "websocket": "^1.0.34",
+    "ws": "^8.5.0"
+  },
+  "optionalDependencies": {
+    "utf-8-validate": "^5.0.9"
+  }
+}

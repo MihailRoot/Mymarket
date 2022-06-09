@@ -1,0 +1,8 @@
+{% for i in objects %}
+<a href="details/{{ i.product}}">{{i.product}}</a>
+{{i.text }}
+<a href="/userprofiles/{{ i.useralot.id }}">{{i.useralot}}</a>
+{% endfor %}
+<a href="buy">
+    <input type="button" value="buy" />
+ </a>
